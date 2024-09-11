@@ -222,3 +222,7 @@ Once your pod is up and running, run the port-forward to expose the service
 ```bash
 kubectl port-forward service/<service_name> 5000:5000
 ```
+
+Error I faced: insufficient recource
+reason was the require nodes was 4 but i have created only 2 nodes in the EKC cluster
+solution i increased the nodes in the EKS cluster in AWS website

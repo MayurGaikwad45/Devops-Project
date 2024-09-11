@@ -1,0 +1,9 @@
+ kubectl get pods -n default -w
+NAME                            READY   STATUS    RESTARTS   AGE
+my-flask-app-7fd475d547-grwvr   1/1     Running   0          8h
+
+kubectl port-forward svc/my-flask-service 5000:5000
+
+Error: insufficient pods/nodes
+
+I just scaled up the nodes in EKS
